@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Isaac's LaCroix API Search</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../GIPHY_API/assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div>
+            <h1 class="displayArea">Welcome to my Giphy API Homework!</h1>
+            <h4>1. Enter your favorite LaCroix flavor in the search box below</h4>
+            <h4>2. Click submit</h4>
+            <p> Need help picking a flavor? 
+                <a href="https://www.lacroixwater.com/flavors/">Visit LaCroix's website!</a>
+
+            </p>
+        </div>
+    </div>
+    <!-- //all user interaction occurs here -->
+    <div class="interaction">
+        <input id="userInput" type="text" placeholder="LaCroix flavor">
+        <button id="searchBtn" type="button" class="btn btn-primary">Submit</button>
+        <button id="clearBtn" type="button" class="btn btn-secondary">Clear</button>
+        <!-- <button id="clearBtn">clear</button> -->
+    </div>
+    <!-- all results related items go here -->
+    <div class="imputResults">
+        <h4>Your favorite flavor has been transformed into a button!!!</h4>
+        <h4>Click your flavor button for a sparkling surprise</h4>
+        <!-- <h1 class="header">Results will go here</h1> -->
+        <div id=displayButtons></div>
+        <div id="gifs-appear-here"></div>
+
+    </div>
+</body>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="../GIPHY_API/assets/javascript/app.js"></script>
+
+</html>
