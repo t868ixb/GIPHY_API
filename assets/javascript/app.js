@@ -41,8 +41,7 @@ $(document).ready(function () {
     function showButtons() {
         $("#displayButtons").empty();
         for (var i = 0; i < topicArray.length; i++) {
-           // var gifButton = $("<button>");
-           var gifButton = $("<button type='button' class='btn btn-success btn-lg'>" + " ");
+           var gifButton = $("<button type='button' class='btn btn-success btn-lg' style='margin:10px 10px'>");
             gifButton.addClass("topic");
             gifButton.addClass("newButton")
             gifButton.attr("data-topic", topicArray[i]);
